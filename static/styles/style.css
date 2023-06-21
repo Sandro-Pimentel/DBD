@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400&display=swap');
 
+:root {
+    --family: 'Josefin Slab', serif;
+    
+    /* CORES */
+    --font: #F6F6F6;
+    --bg: #1F0000;
+    --cont-bg: #381111;
+    --nav: #6B0000;
+    --nav-font: #F6F6F6;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +18,14 @@
 
 body {
     height: 100hv;
-    color: #000000;
-    background-color: #c2c2c2;
-    font-family: 'Josefin Slab', serif;
+    color: var(--font);
+    background-color: var(--bg);
+    font-family: var(--family);
     box-sizing: border-box;
 }
 
 .header {
-    background-color: #575656;
+    background-color: var(--nav);
     padding: 2% 0 2% 10%;
 }
 
@@ -26,8 +37,8 @@ body {
 .header__nav__link {
     font-size: 20px;
     text-decoration: none;
-    color: #F6F6F6;
-    font-family: 'Josefin Slab', serif;
+    color: var(--nav-font);
+    font-family: var(--family);
     font-weight: 400;
 }
 
@@ -45,7 +56,7 @@ body {
     padding: 5%;
     gap: 2rem;
     align-items: center;
-    background-color:#F6F6F6;
+    background-color: var(--cont-bg);
 }
 
 .main__content__title {
@@ -80,7 +91,7 @@ body {
 .main__content__blocks__content {
     width: 13.5rem;
     height: 4.5rem;
-    border: 2px solid black;
+    border: 2px solid #000000;
     border-radius: 10px;
     text-align: center;
     padding: 1%;
@@ -89,7 +100,7 @@ body {
 .footer {
 	display: flex;
     justify-content: space-between;
-	background-color: #575656;
+	background-color: var(--nav);
     padding: 2% 10% 2% 10%;
 }
 
@@ -112,7 +123,7 @@ body {
 	font-size: 20px;
     text-decoration: none;
     color: #F6F6F6;
-    font-family: 'Josefin Slab', serif;
+    font-family: var(--family);
     font-weight: 400;
     padding-top: 0.25rem;
 }
