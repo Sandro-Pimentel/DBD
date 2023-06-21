@@ -12,6 +12,26 @@ app = Flask('__name__')
 
 @app.route('/')
 @app.route('/index')
+
 def index():
     return render_template('index.html')
 
+@app.route('/shrine')
+
+def shrine():
+    return render_template('shrine.html')
+
+@app.route('/survs')
+
+def survs():
+    return render_template('survs.html')
+
+@app.route('/killers')
+
+def killers():
+    return render_template('killers.html')
+
+@app.route('/maps')
+
+def maps():
+    return render_template('maps.html')
