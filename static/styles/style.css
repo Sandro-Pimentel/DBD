@@ -4,10 +4,10 @@
     --family: 'Josefin Slab', serif;
     
     --font: #F6F6F6;
-    --bg: #130000;
-    --cont-bg: #290d0d;
-    --tocont-bg: #4e1818;
-    --block-bg: #4b1717;
+    --bg: #100000;
+    --cont-bg: #380000;
+    --tocont-bg: #300000;
+    --block-bg: #520000;
     --nav: #8f0000;
     --tonav: #440000;
     --nav-font: #F6F6F6;
@@ -78,12 +78,14 @@ body {
 
 .main__content__image {
     border: #000000 solid 4px;
+    border-radius: 10px;
 	height: 15rem;
     align-self: center;
 }
 
 .main__content__image2 {
     border: #000000 solid 4px;
+    border-radius: 10px;  
 	height: 17rem;
     align-self: center;
 }
