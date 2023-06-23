@@ -3,11 +3,13 @@
 :root {
     --family: 'Josefin Slab', serif;
     
-    /* CORES */
     --font: #F6F6F6;
-    --bg: #1F0000;
-    --cont-bg: #381111;
-    --nav: #6B0000;
+    --bg: #130000;
+    --cont-bg: #290d0d;
+    --tocont-bg: #4e1818;
+    --block-bg: #4b1717;
+    --nav: #8f0000;
+    --tonav: #440000;
     --nav-font: #F6F6F6;
 }
 
@@ -25,7 +27,7 @@ body {
 }
 
 .header {
-    background-color: var(--nav);
+    background: linear-gradient(to top, var(--nav) 0%, var(--tonav) 100%);
     padding: 2% 0 2% 10%;
 }
 
@@ -56,7 +58,7 @@ body {
     padding: 5%;
     gap: 2rem;
     align-items: center;
-    background-color: var(--cont-bg);
+    background: linear-gradient(to left, var(--cont-bg) 0%, var(--tocont-bg) 100%);
 }
 
 .main__content__title {
@@ -102,12 +104,13 @@ body {
     border-radius: 10px;
     text-align: center;
     padding: 1%;
+    background: linear-gradient(to top, var(--cont-bg) 0%, var(--block-bg) 100%);
 }
 
 .footer {
 	display: flex;
     justify-content: space-between;
-	background-color: var(--nav);
+    background: linear-gradient(to bottom, var(--nav) 0%, var(--tonav) 100%);
     padding: 2% 10% 2% 10%;
 }
 
